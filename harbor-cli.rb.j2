@@ -5,8 +5,9 @@ class HarborCli < Formula
   homepage "https://github.com/pederhan/harbor-cli"
   url "https://github.com/pederhan/harbor-cli/archive/f5bc53c62d1529e6b67019229304c4c8a8fe155f.tar.gz"
   sha256 "51a0ca14474c4fce2d0c4c05bb81354a5ba21f4d4f1cd3a8069f10e2105f9cb4"
+  version "f5bc53c62d1529e6b67019229304c4c8a8fe155f"
 
-  depends_on "python@{{python_version | default('3.11')}}"
+  depends_on "python@{{ python_version }}"
   # Needed by Levenshtein
   depends_on "cmake" => :build
 

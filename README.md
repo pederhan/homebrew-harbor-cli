@@ -32,16 +32,14 @@ To faciliate this, run the following command:
 python makeformula.py
 ```
 
-This will generate formulas for the latest version of harbor-cli for all supported Python versions and save them to `Formula/harbor-cli@3.x.rb`. The Formula for the latest Python version is saved to `Formula/harbor-cli.rb`.
+This will generate a new formula for the latest version of harbor-cli and save it to `harbor-cli.rb`.
 
-To generate formulas for only specific Python versions:
-
-```bash
-python makeformula.py 3.8 3.9
-```
 
 ## TODO
 
 - [ ] Validate Python version args
 - [ ] Fetch URL for newest version of harbor-cli from GitHub
+    - [ ] Validate URL
+    - [ ] Get checksum
+    - [ ] Render commit sha as version in formula
 
